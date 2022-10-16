@@ -1,0 +1,160 @@
+<html>
+<head>
+    <script src="https://cdn.jsdelivr.net/theaterjs/latest/theater.min.js"></script>
+</head>
+<body>
+<main class="scene">
+    <div class="actor">
+        <div class="actor__prefix">-</div>
+        <div id="vader" class="actor__content"></div>
+    </div>
+
+    <div class="actor">
+        <div class="actor__prefix">-</div>
+        <div id="luke" class="actor__content"></div>
+    </div>
+
+    <p>This is a demo of <a href="https://github.com/Zhouzi/TheaterJS" target="_blank">TheaterJS</a>.</p>
+    <p>It's forkable/editable on <a href="https://codepen.io/Zhouzi/pen/JoRazP" target="_blank">CodePen</a>.</p>
+    <p>Everything you need to know is on its <a href="https://github.com/Zhouzi/TheaterJS" target="_blank">GitHub</a> repository.</p>
+    <p>And it'd be really nice to share the force on <a href="https://twitter.com/home?status=TheaterJS%2C%20a%20typing%20effect%20mimicking%20human%20behavior.%20https%3A%2F%2Fgithub.com%2FZhouzi%2FTheaterJS%20via%20%40zh0uzi" target="_blank">Twitter</a> or <a href="https://www.facebook.com/sharer/sharer.php?u=https://github.com/Zhouzi/TheaterJS" target="_blank">Facebook</a>.</p>
+</main>
+</body>
+</html>
+<style>
+    @import '//fonts.googleapis.com/css?family=Cutive';
+    *,
+    *:before,
+    *:after {
+        box-sizing: inherit;
+    }
+
+    html,
+    body {
+        padding: 0;
+        margin: 0;
+        background: black;
+    }
+
+    html {
+        font-size: 14px;
+        height: 100%;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: "Cutive", serif;
+        font-size: 1rem;
+        line-height: 1.4;
+        color: #222;
+        background-color: #ededed;
+        transition: background-color 150ms ease-out, color 150ms ease-out;
+    }
+
+    .dark {
+        color: #ededed;
+        background-color: #222;
+    }
+
+    a {
+        color: inherit;
+        text-decoration: none;
+        border-bottom: 1px solid;
+    }
+    a:focus, a:hover {
+        box-shadow: inset 0 -8px 0 #c92b2b;
+    }
+
+    p {
+        opacity: 0.6;
+        margin: 0 0 0.6rem 0;
+        transition: opacity 300ms ease-out;
+    }
+    p:hover {
+        opacity: 1;
+    }
+
+    .scene {
+        padding: 6rem 2rem;
+        max-width: 800px;
+        margin: 0 auto;
+    }
+
+    .actor {
+        font-size: 2.8rem;
+        display: flex;
+        margin-bottom: 2rem;
+    }
+    .actor:last-of-type {
+        margin-bottom: 6rem;
+    }
+
+    .actor__content {
+        flex-grow: 1;
+    }
+
+    @-webkit-keyframes blink {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+
+    @keyframes blink {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    .actor__content--typing::after {
+        content: "|";
+        -webkit-animation: blink 500ms infinite;
+        animation: blink 500ms infinite;
+    }
+</style>
+<script>
+
+    var theater = theaterJS()
+
+    theater
+        .on('type:start, erase:start', function () {
+            theater.getCurrentActor().$element.classList.add('actor__content--typing')
+        })
+        .on('type:end, erase:end', function () {
+            theater.getCurrentActor().$element.classList.remove('actor__content--typing')
+        })
+        .on('type:start, erase:start', function () {
+            if (theater.getCurrentActor().name === 'vader') {
+                document.body.classList.add('dark')
+            } else {
+                document.body.classList.remove('dark')
+            }
+        })
+
+    theater
+        .addActor('vader', { speed: 0.8, accuracy: 0.6 })
+        .addActor('luke')
+        .addScene('vader:Ron.', 600)
+        .addScene('luke:What?', 400)
+        .addScene('vader:What do you do', 400)
+        .addScene('luke:webprojekt', -3, '!!! ', 600, 'No! ', 600)
+        .addScene('luke:That\'s not true!', 600)
+        .addScene('luke:That\'s impossible!', 400)
+        .addScene('vader:Search your feelings.', 1600)
+        .addScene('vader:You know it to be true.', 1000)
+        .addScene('luke:Noooooooo! ', 600, 'No!', 400)
+        .addScene('vader:Luke.', 600)
+        .addScene('vader:You can destroy the Emperor.', 1600)
+        .addScene('vader:He has foreseen this. ', 800)
+        .addScene('vader:It is your destiny.', 1600)
+        .addScene('vader:Join me.', 800)
+        .addScene('vader:Together we can rule the galaxy.', 800)
+        .addScene('vader:As father and son.', 1600)
+        .addScene('vader:Come with me. ', 800)
+        .addScene('vader:It is the only way.', 2000)
+        .addScene(theater.replay.bind(theater))
+</script>
