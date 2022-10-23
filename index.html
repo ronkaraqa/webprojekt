@@ -1,157 +1,214 @@
+<!DOCTYPE html>
 <html>
 <head>
-    <script src="https://cdn.jsdelivr.net/theaterjs/latest/theater.min.js"></script>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+    
+    <script src="animations.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/4.0.1/placeholders.jquery.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js"></script>
+   
 </head>
 <body>
-<main class="scene">
-    <div class="actor">
-        <div class="actor__prefix">-</div>
-        <div id="vader" class="actor__content"></div>
+   <!-- Menu
+================================================== -->
+
+<div id="home" class="text-center">
+    <div class="layer">
+        <div class="content">
+            <h1><strong><span>Ron Karaqa</span></strong></h1>
+            <p class="lead">BFH Student and ERP Engineer</p>
+            
+        </div>
     </div>
 
-    <div class="actor">
-        <div class="actor__prefix">-</div>
-        <div id="luke" class="actor__content"></div>
+</div>
+<div id="about">
+    <div class="container">
+        <div class="section-title center text-center">
+            <h2><strong>Über mich</strong></h2>
+            <div class="line">
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div class="row">
+            <div class="col-md-6">
+                <p>Hallo, ich bin Ron Karaqa</p>
+            </div>
+            <div class="col-md-6">
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" data-width="70%" style="width:70%;"  >
+                        70% - Agilität
+                    </div>
+                </div>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" data-width="50%" style="width:50%;" >
+                        50% - Python
+                    </div>
+                </div>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;"  >
+                        60% - Irgendwas
+                    </div>
+                </div>
+                <div class="progress progress-striped active" >
+                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
+                        80% - Irgendwas
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
     </div>
 
+
+   <!-- Works
+================================================== -->
+<div id="portfolio" class="text-center">
+    <div class="container">
+
+        <div class="section-title center">
+            <h2>Meine Projekte</h2>
+            <div class="line">
+
+            </div>
+        </div>
+        <div class="gap"></div>
+        <section id="works" class="container">
+
+
+            <ul class="portfolio-items col-4">
+                <li class="portfolio-item apps">
+                    <div class="item-inner">
+                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <div class="layer">
+                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </li><!--/.portfolio-item-->
+                <li class="portfolio-item logo apps">
+                    <div class="item-inner">
+                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <div class="layer">
+                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </li><!--/.portfolio-item-->
+                <li class="portfolio-item logo web">
+                    <div class="item-inner">
+                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <div class="layer">
+                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </li><!--/.portfolio-item-->
+                <li class="portfolio-item logo web apps">
+                    <div class="item-inner">
+                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <div class="layer">
+                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </li><!--/.portfolio-item-->
+                <li class="portfolio-item apps web">
+                    <div class="item-inner">
+                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <div class="layer">
+                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </li><!--/.portfolio-item-->
+                <li class="portfolio-item apps">
+                    <div class="item-inner">
+                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <div class="layer">
+                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </li><!--/.portfolio-item-->
+                <li class="portfolio-item web">
+                    <div class="item-inner">
+                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <div class="layer">
+                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </li><!--/.portfolio-item-->
+                <li class="portfolio-item logo">
+                    <div class="item-inner">
+                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
+                        <h5>Lorem ipsum dolor sit amet</h5>
+                        <div class="layer">
+                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
+                        </div>
+                    </div>
+                </li><!--/.portfolio-item-->
+            </ul>
+        </section><!--/#portfolio-->
+    </div>
+</div>     
+<div id="contact" class="text-center">
+    <div class="container">
+        <div class="section-title center">
+            <h2>Kontaktformular</h2>
+            <div class="line">
+
+            </div>
+        </div>
+        <div class="gap"></div>
+        <div class="address"></div>
+        <div id="contact-form">
+            <div id="message"></div>
+            <form method="post" action="php/contact.php" name="contactform" id="contactform">
+                <input name="Name" type="text" id="name"  class="inputForm2" placeholder="Name"  >
+                <input name="Email" type="text" id="email" placeholder="Email">
+                <textarea name="Nachricht"  id="comments" placeholder="Message"  ></textarea>
+                <input type="submit" class="send_message transition" id="submit" value="Senden" />
+            </form>
+        </div>
+
+
+    </div>
+
+
+</div>
+<!-- Footer
+================================================== -->
+<footer id="footer">
+    <div class="footer-top">
+        <div class="container text-center">
+            <div class="footer-logo">
+                <a href="https://codepen.io/jvjijith/pen/woMywq">Ron Karaqa</a>
+            </div>
+            <div class="social-icons">
+                <ul>
+                    <li><a class="envelope" href=""><i class="fa fa-codepen icon-sm"></i></a></li>
+                    <li><a class="twitter" href=""><i class="fa fa-twitter icon-sm"></i></a></li>
+                    <li><a class="dribbble" href=""><i class="fa fa-wordpress icon-sm"></i></a></li>
+                    <li><a class="facebook" href=""><i class="fa fa-facebook icon-sm"></i></a></li>
+                    <li><a class="linkedin" href=""><i class="fa fa-linkedin icon-sm"></i></a></li>
+                    <li><a class="tumblr" href=""><i class="fa fa-github icon-sm"></i></a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
     
-</main>
+</footer>
 </body>
 </html>
-<style>
-    @import '//fonts.googleapis.com/css?family=Cutive';
-    *,
-    *:before,
-    *:after {
-        box-sizing: inherit;
-    }
-
-    html,
-    body {
-        padding: 0;
-        margin: 0;
-        background: black;
-    }
-
-    html {
-        font-size: 14px;
-        height: 100%;
-        box-sizing: border-box;
-    }
-
-    body {
-        font-family: "Cutive", serif;
-        font-size: 1rem;
-        line-height: 1.4;
-        color: #222;
-        background-color: #ededed;
-        transition: background-color 150ms ease-out, color 150ms ease-out;
-    }
-
-    .dark {
-        color: #ededed;
-        background-color: #222;
-    }
-
-    a {
-        color: inherit;
-        text-decoration: none;
-        border-bottom: 1px solid;
-    }
-    a:focus, a:hover {
-        box-shadow: inset 0 -8px 0 #c92b2b;
-    }
-
-    p {
-        opacity: 0.6;
-        margin: 0 0 0.6rem 0;
-        transition: opacity 300ms ease-out;
-    }
-    p:hover {
-        opacity: 1;
-    }
-
-    .scene {
-        padding: 6rem 2rem;
-        max-width: 800px;
-        margin: 0 auto;
-    }
-
-    .actor {
-        font-size: 2.8rem;
-        display: flex;
-        margin-bottom: 2rem;
-    }
-    .actor:last-of-type {
-        margin-bottom: 6rem;
-    }
-
-    .actor__content {
-        flex-grow: 1;
-    }
-
-    @-webkit-keyframes blink {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-
-    @keyframes blink {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    .actor__content--typing::after {
-        content: "|";
-        -webkit-animation: blink 500ms infinite;
-        animation: blink 500ms infinite;
-    }
-</style>
-<script>
-
-    var theater = theaterJS()
-
-    theater
-        .on('type:start, erase:start', function () {
-            theater.getCurrentActor().$element.classList.add('actor__content--typing')
-        })
-        .on('type:end, erase:end', function () {
-            theater.getCurrentActor().$element.classList.remove('actor__content--typing')
-        })
-        .on('type:start, erase:start', function () {
-            if (theater.getCurrentActor().name === 'vader') {
-                document.body.classList.add('dark')
-            } else {
-                document.body.classList.remove('dark')
-            }
-        })
-
-    theater
-        .addActor('vader', { speed: 0.8, accuracy: 0.6 })
-        .addActor('luke')
-        .addScene('vader:Ron.', 600)
-        .addScene('luke:What?', 400)
-        .addScene('vader:What are you doing?', 400)
-        .addScene('luke:I am doing a Webproject', 600)
-        .addScene('luke:That\'s not true!', 600)
-        .addScene('luke:That\'s impossible!', 400)
-        .addScene('vader:Search your feelings.', 1600)
-        .addScene('vader:You know it to be true.', 1000)
-        .addScene('luke:Noooooooo! ', 600, 'No!', 400)
-        .addScene('vader:Luke.', 600)
-        .addScene('vader:You can destroy the Emperor.', 1600)
-        .addScene('vader:He has foreseen this. ', 800)
-        .addScene('vader:It is your destiny.', 1600)
-        .addScene('vader:Join me.', 800)
-        .addScene('vader:Together we can rule the galaxy.', 800)
-        .addScene('vader:As father and son.', 1600)
-        .addScene('vader:Come with me. ', 800)
-        .addScene('vader:It is the only way.', 2000)
-        .addScene(theater.replay.bind(theater))
-</script>
