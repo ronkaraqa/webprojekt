@@ -1,221 +1,436 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
+
 <head>
-    <link rel="stylesheet" href="styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.5.2/animate.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
-    
-    <script src="animations.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.inview/1.0.0/jquery.inview.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/placeholders/4.0.1/placeholders.jquery.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.0/jquery-ui.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/3.3.7/js/bootstrap.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-smooth-scroll/2.0.0/jquery.smooth-scroll.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.sticky/1.0.3/jquery.sticky.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js"></script>
-   
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Webportfolio Karaqa Ron</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/favicon.png" rel="icon">
+  <link href="assets/img/apple-touch-icon.png" rel="apple-touch-icon">
+  <!-- probably delete-->
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Oronius -->
+  <link rel=”stylesheet” href=”https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css”>
+<script src=”https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js”></script>
+<script src=”https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js”></script>
+<script src=”https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js”></script>
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+
 </head>
-<body>
-   <!-- Menu
-================================================== -->
-<div class="loader">
-    <div class="inner one"></div>
-    <div class="inner two"></div>
-    <div class="inner three"></div>
-  </div>
 
-<div id="home" class="text-center">
-    <div class="layer">
-        <div class="content">
-            <h1><strong><span>Ron Karaqa</span></strong></h1>
-            <p class="lead">BFH Student and ERP Engineer</p>
-            
+<body onload="move()">
+
+  <!-- ======= Mobile nav toggle button ======= -->
+  <i class="bi bi-list mobile-nav-toggle d-xl-none"></i>
+
+  <!-- ======= Header ======= -->
+  <header id="header">
+    <div class="d-flex flex-column">
+
+      <div class="profile">
+        <img src="" alt="" class="img-fluid rounded-circle">
+        <!-- ======= put picutre top left insideh ere ======= -->
+        <h1 class="text-light"><a href="index.html">Ron Karaqa</a></h1>
+        <div class="social-links mt-3 text-center">
+          <a href="#" class="twitter"><i class="bx bxl-twitter"></i></a>
+          <a href="#" class="instagram"><i class="bx bxl-instagram"></i></a>
+          <a href="#" class="linkedin"><i class="bx bxl-linkedin"></i></a>
+          <a href="#" class="github"><i class="bx bxl-github"></i></a>
         </div>
+      </div>
+
+      <nav id="navbar" class="nav-menu navbar">
+        <ul>
+          <li><a href="#hero" class="nav-link scrollto active"><i class="bx bx-home"></i> <span>Home</span></a></li>
+          <li><a href="#about" class="nav-link scrollto"><i class="bx bx-user"></i> <span>About</span></a></li>
+          <li><a href="#resume" class="nav-link scrollto"><i class="bx bx-file-blank"></i> <span>Resume</span></a></li>
+          <li><a href="#portfolio" class="nav-link scrollto"><i class="bx bx-book-content"></i> <span>Portfolio</span></a></li>
+          <li><a href="#contact" class="nav-link scrollto"><i class="bx bx-envelope"></i> <span>Contact</span></a></li>
+        </ul>
+      </nav><!-- .nav-menu -->
     </div>
+  </header><!-- End Header -->
 
-</div>
-<div id="about">
-    <div class="container">
-        <div class="section-title center text-center">
-            <h2><strong>Über mich</strong></h2>
-            <div class="line">
-            </div>
+  <!-- ======= Hero Section ======= -->
+  
+  <section id="hero" class="d-flex flex-column justify-content-center align-items-center">
+    <div class="hero-container" data-aos="fade-in">
+      <h1>Ron Karaqa</h1>
+      <p>I am a <span class="typed" data-typed-items="BFH Student, ERP Engineer"></span></p>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div data-aos="fade-up" data-aos-delay="100">
+        <div class="section-title">
+          <h2>About Me</h2>
+          <p></p>
+        
+        
+       </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-4" data-aos="fade-right">
+          <img src="assets/img/headshot.jpg" class="img-fluid" alt="">
         </div>
-        <div class="gap"></div>
+        <div class="col-lg-8 pt-4 pt-lg-0 content" data-aos="fade-left">
+          <h3>Student &amp; ERP Engineer.</h3>
+          <p>
+            I am 23 years old and live in Switzerland. I study Business Information Technology at BFH and work as a Junior ERP Engineer for the Schweizerische Bundesbahnen SBB. My hobbies:
+          </p>
+          <div class="row">
+            <div class="col-lg-6">
+              <ul>
+                <li><div class="svg-icon"><svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M17.638,6.181h-3.844C13.581,4.273,11.963,2.786,10,2.786c-1.962,0-3.581,1.487-3.793,3.395H2.362c-0.233,0-0.424,0.191-0.424,0.424v10.184c0,0.232,0.191,0.424,0.424,0.424h15.276c0.234,0,0.425-0.191,0.425-0.424V6.605C18.062,6.372,17.872,6.181,17.638,6.181 M13.395,9.151c0.234,0,0.425,0.191,0.425,0.424S13.629,10,13.395,10c-0.232,0-0.424-0.191-0.424-0.424S13.162,9.151,13.395,9.151 M10,3.635c1.493,0,2.729,1.109,2.936,2.546H7.064C7.271,4.744,8.506,3.635,10,3.635 M6.605,9.151c0.233,0,0.424,0.191,0.424,0.424S6.838,10,6.605,10c-0.233,0-0.424-0.191-0.424-0.424S6.372,9.151,6.605,9.151 M17.214,16.365H2.786V7.029h3.395v1.347C5.687,8.552,5.332,9.021,5.332,9.575c0,0.703,0.571,1.273,1.273,1.273c0.702,0,1.273-0.57,1.273-1.273c0-0.554-0.354-1.023-0.849-1.199V7.029h5.941v1.347c-0.495,0.176-0.849,0.645-0.849,1.199c0,0.703,0.57,1.273,1.272,1.273s1.273-0.57,1.273-1.273c0-0.554-0.354-1.023-0.849-1.199V7.029h3.395V16.365z"></path>
+                </svg>
+                <p>hiking</p></li>
+                <li><svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M8.627,7.885C8.499,8.388,7.873,8.101,8.13,8.177L4.12,7.143c-0.218-0.057-0.351-0.28-0.293-0.498c0.057-0.218,0.279-0.351,0.497-0.294l4.011,1.037C8.552,7.444,8.685,7.667,8.627,7.885 M8.334,10.123L4.323,9.086C4.105,9.031,3.883,9.162,3.826,9.38C3.769,9.598,3.901,9.82,4.12,9.877l4.01,1.037c-0.262-0.062,0.373,0.192,0.497-0.294C8.685,10.401,8.552,10.18,8.334,10.123 M7.131,12.507L4.323,11.78c-0.218-0.057-0.44,0.076-0.497,0.295c-0.057,0.218,0.075,0.439,0.293,0.495l2.809,0.726c-0.265-0.062,0.37,0.193,0.495-0.293C7.48,12.784,7.35,12.562,7.131,12.507M18.159,3.677v10.701c0,0.186-0.126,0.348-0.306,0.393l-7.755,1.948c-0.07,0.016-0.134,0.016-0.204,0l-7.748-1.948c-0.179-0.045-0.306-0.207-0.306-0.393V3.677c0-0.267,0.249-0.461,0.509-0.396l7.646,1.921l7.654-1.921C17.91,3.216,18.159,3.41,18.159,3.677 M9.589,5.939L2.656,4.203v9.857l6.933,1.737V5.939z M17.344,4.203l-6.939,1.736v9.859l6.939-1.737V4.203z M16.168,6.645c-0.058-0.218-0.279-0.351-0.498-0.294l-4.011,1.037c-0.218,0.057-0.351,0.28-0.293,0.498c0.128,0.503,0.755,0.216,0.498,0.292l4.009-1.034C16.092,7.085,16.225,6.863,16.168,6.645 M16.168,9.38c-0.058-0.218-0.279-0.349-0.498-0.294l-4.011,1.036c-0.218,0.057-0.351,0.279-0.293,0.498c0.124,0.486,0.759,0.232,0.498,0.294l4.009-1.037C16.092,9.82,16.225,9.598,16.168,9.38 M14.963,12.385c-0.055-0.219-0.276-0.35-0.495-0.294l-2.809,0.726c-0.218,0.056-0.351,0.279-0.293,0.496c0.127,0.506,0.755,0.218,0.498,0.293l2.807-0.723C14.89,12.825,15.021,12.603,14.963,12.385"></path>
+                </svg>
+                <p>hiking</p></li>
+              </ul>
+            </div>
+            <div class="col-lg-6">
+              <ul>
+                <li><svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M18.121,9.88l-7.832-7.836c-0.155-0.158-0.428-0.155-0.584,0L1.842,9.913c-0.262,0.263-0.073,0.705,0.292,0.705h2.069v7.042c0,0.227,0.187,0.414,0.414,0.414h3.725c0.228,0,0.414-0.188,0.414-0.414v-3.313h2.483v3.313c0,0.227,0.187,0.414,0.413,0.414h3.726c0.229,0,0.414-0.188,0.414-0.414v-7.042h2.068h0.004C18.331,10.617,18.389,10.146,18.121,9.88 M14.963,17.245h-2.896v-3.313c0-0.229-0.186-0.415-0.414-0.415H8.342c-0.228,0-0.414,0.187-0.414,0.415v3.313H5.032v-6.628h9.931V17.245z M3.133,9.79l6.864-6.868l6.867,6.868H3.133z"></path>
+                </svg>
+                <p>hiking</p></li>
+                <li><svg class="svg-icon" viewBox="0 0 20 20">
+                  <path d="M8.627,7.885C8.499,8.388,7.873,8.101,8.13,8.177L4.12,7.143c-0.218-0.057-0.351-0.28-0.293-0.498c0.057-0.218,0.279-0.351,0.497-0.294l4.011,1.037C8.552,7.444,8.685,7.667,8.627,7.885 M8.334,10.123L4.323,9.086C4.105,9.031,3.883,9.162,3.826,9.38C3.769,9.598,3.901,9.82,4.12,9.877l4.01,1.037c-0.262-0.062,0.373,0.192,0.497-0.294C8.685,10.401,8.552,10.18,8.334,10.123 M7.131,12.507L4.323,11.78c-0.218-0.057-0.44,0.076-0.497,0.295c-0.057,0.218,0.075,0.439,0.293,0.495l2.809,0.726c-0.265-0.062,0.37,0.193,0.495-0.293C7.48,12.784,7.35,12.562,7.131,12.507M18.159,3.677v10.701c0,0.186-0.126,0.348-0.306,0.393l-7.755,1.948c-0.07,0.016-0.134,0.016-0.204,0l-7.748-1.948c-0.179-0.045-0.306-0.207-0.306-0.393V3.677c0-0.267,0.249-0.461,0.509-0.396l7.646,1.921l7.654-1.921C17.91,3.216,18.159,3.41,18.159,3.677 M9.589,5.939L2.656,4.203v9.857l6.933,1.737V5.939z M17.344,4.203l-6.939,1.736v9.859l6.939-1.737V4.203z M16.168,6.645c-0.058-0.218-0.279-0.351-0.498-0.294l-4.011,1.037c-0.218,0.057-0.351,0.28-0.293,0.498c0.128,0.503,0.755,0.216,0.498,0.292l4.009-1.034C16.092,7.085,16.225,6.863,16.168,6.645 M16.168,9.38c-0.058-0.218-0.279-0.349-0.498-0.294l-4.011,1.036c-0.218,0.057-0.351,0.279-0.293,0.498c0.124,0.486,0.759,0.232,0.498,0.294l4.009-1.037C16.092,9.82,16.225,9.598,16.168,9.38 M14.963,12.385c-0.055-0.219-0.276-0.35-0.495-0.294l-2.809,0.726c-0.218,0.056-0.351,0.279-0.293,0.496c0.127,0.506,0.755,0.218,0.498,0.293l2.807-0.723C14.89,12.825,15.021,12.603,14.963,12.385"></path>
+                </svg>
+                <p>hiking</p></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Skills Section ======= -->
+    <section id="skills" class="skills section-bg">
+      <div class="container">
+
+        <div class="row skills-content">
+          
+<p>here are some of my relevant skills:</p>
+          <div class="col-lg-6" data-aos="fade-up">
+
+              <div class="progress">
+                <span class="skill">HTML <i class="val">40%</i></span>
+                <div class="w3-light-grey">
+                  <div id="myBar" class="w3-container w3-blue w3-center" style="width:20%"></div>
+                </div>
+              </div>
+
+            <div class="progress">
+              <span class="skill">CSS <i class="val">90%</i></span>
+              <div class="w3-light-grey">
+                <div id="myBar" class="w3-container w3-blue w3-center" style="width:20%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">JavaScript <i class="val">75%</i></span>
+              <div class="w3-light-grey">
+                <div id="myBar" class="w3-container w3-blue w3-center" style="width:20%"></div>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+
+            <div class="progress">
+              <span class="skill">PHP <i class="val">80%</i></span>
+              <div class="w3-light-grey">
+                <div id="myBar" class="w3-container w3-blue w3-center" style="width:20%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">WordPress/CMS <i class="val">90%</i></span>
+              <div class="w3-light-grey">
+                <div id="myBar" class="w3-container w3-blue w3-center" style="width:20%"></div>
+              </div>
+            </div>
+
+            <div class="progress">
+              <span class="skill">Photoshop <i class="val">55%</i></span>
+              <div class="w3-light-grey">
+                <div id="myBar" class="w3-container w3-blue w3-center" style="width:20%"></div>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Skills Section -->
+
+    <!-- ======= Resume Section ======= -->
+    <section id="resume" class="resume">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Resume</h2>
+          
+        </div>
+
         <div class="row">
-            <div class="col-md-6">
-                <p>My name is Ron Karaqa.</p>
-                <p>I am a Student at BFH.</p>
-                <p>I work as an ERP Engineer for the Swiss Railway Company SBB</p>
-            </div>
-            <div class="col-md-6">
-                <div class="progress progress-striped active" >
-                    <div class="progress-bar progress-bar-success" role="progressbar" aria-valuenow="40" aria-valuemin="0" aria-valuemax="100" data-width="70%" style="width:70%;"  >
-                        70% - Agilität
-                    </div>
-                </div>
-                <div class="progress progress-striped active" >
-                    <div class="progress-bar progress-bar-info" role="progressbar" aria-valuenow="20" aria-valuemin="0" aria-valuemax="100" data-width="50%" style="width:50%;" >
-                        50% - Python
-                    </div>
-                </div>
-                <div class="progress progress-striped active" >
-                    <div class="progress-bar progress-bar-warning" role="progressbar" aria-valuenow="60" aria-valuemin="0" aria-valuemax="100" style="width:60%;"  >
-                        60% - Irgendwas
-                    </div>
-                </div>
-                <div class="progress progress-striped active" >
-                    <div class="progress-bar progress-bar-danger" role="progressbar" aria-valuenow="80" aria-valuemin="0" aria-valuemax="100" style="width:80%;">
-                        80% - Irgendwas
-                    </div>
-                </div>
+          <div class="col-lg-6" data-aos="fade-up">
 
-
+            <h3 class="resume-title">Education</h3>
+            <div class="resume-item">
+              <div class="wrapper-main">
+                <div class="left part">
+                  <h4>Bachelor in Business Information Technology</h4>
+                  <h5>2020-2024</h5>
+                  <p><em>Berner Fachhochschule, Bern, CH</em></p>
+                </div>
+                <div class="right part">
+                  <img class="bfhimage" src="assets/img/BeFH.png">
+                </div>
+              </div>
+              <p>Qui deserunt veniam. Et sed aliquam labore tempore sed quisquam iusto autem sit. Ea vero voluptatum qui ut dignissimos deleniti nerada porti sand markend</p>
             </div>
+            
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <h3 class="resume-title">Professional Experience</h3>
+            <div class="resume-item">
+              <div class="wrapper-main">
+                <div class="left part">
+                <h4>Junior ERP Engineer</h4>
+                <h5>2022 - present</h5>
+                <p><em>SBB, Worblaufen, CH </em></p>
+                </div>
+                <div class="right part">
+                  <img class="sbbimage" src="assets/img/SBB.png">
+                </div>
+              </div>
+              <ul>
+                <li>Lead in the design, development, and implementation of the graphic, layout, and production communication materials</li>
+                <li>Delegate tasks to the 7 members of the design team and provide counsel on all aspects of the project. </li>
+                <li>Supervise the assessment of all graphic materials in order to ensure quality and accuracy of the design</li>
+                <li>Oversee the efficient use of production project budgets ranging from $2,000 - $25,000</li>
+              </ul>
+            </div>
+              <div class="resume-item">
+                <div class="wrapper-main">
+                  <div class="left part">
+                <h4>Scrum Master</h4>
+                <h5>2020 - 2022</h5>
+                <p><em>SBB, Bern, CH</em></p>
+              </div>
+              <div class="right part">
+                <img class="sbbimage" src="assets/img/SBB.png">
+              </div>
+              </div>
+              <ul>
+                <li>Developed numerous marketing programs (logos, brochures,infographics, presentations, and advertisements).</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure</li>
+                <li>Recommended and consulted ywith clients on the most appropriate graphic design</li>
+                <li>Created 4+ design presentations and proposals a month for clients and account managers</li>
+              </ul>
+            </div>
+          </div>
         </div>
-    </div>
 
+      </div>
+    </section><!-- End Resume Section -->
 
-   <!-- Works
-================================================== -->
-<div id="portfolio" class="text-center">
-    <div class="container">
+    <!-- ======= Portfolio Section ======= -->
+    <section id="portfolio" class="portfolio section-bg">
+      <div class="container">
 
-        <div class="section-title center">
-            <h2>Meine Projekte</h2>
-            <div class="line">
-
-            </div>
+        <div class="section-title">
+          <h2>Portfolio</h2>
+          <p>Here are some projects I have contributed to:</p>
         </div>
-        <div class="gap"></div>
-        <section id="works" class="container">
 
-
-            <ul class="portfolio-items col-4">
-                <li class="portfolio-item apps">
-                    <div class="item-inner">
-                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <div class="layer">
-                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item logo apps">
-                    <div class="item-inner">
-                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <div class="layer">
-                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item logo web">
-                    <div class="item-inner">
-                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <div class="layer">
-                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item logo web apps">
-                    <div class="item-inner">
-                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <div class="layer">
-                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item apps web">
-                    <div class="item-inner">
-                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <div class="layer">
-                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item apps">
-                    <div class="item-inner">
-                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <div class="layer">
-                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item web">
-                    <div class="item-inner">
-                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <div class="layer">
-                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </li><!--/.portfolio-item-->
-                <li class="portfolio-item logo">
-                    <div class="item-inner">
-                        <img src="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work" alt="">
-                        <h5>Lorem ipsum dolor sit amet</h5>
-                        <div class="layer">
-                            <a class="preview view" href="https://dummyimage.com/600x400/1a1b1c/e4e5f0.png&text=Work"><i class="fa fa-eye"></i></a>
-                        </div>
-                    </div>
-                </li><!--/.portfolio-item-->
+        <div class="row" data-aos="fade-up">
+          <div class="col-lg-12 d-flex justify-content-center">
+            <ul id="portfolio-flters">
+              <li data-filter="*" class="filter-active">All</li>
+              <li data-filter=".filter-app">App</li>
+              <li data-filter=".filter-web">Web</li>
             </ul>
-        </section><!--/#portfolio-->
-    </div>
-</div>     
-<div id="contact" class="text-center">
-    <div class="container">
-        <div class="section-title center">
-            <h2>Kontaktformular</h2>
-            <div class="line">
-
-            </div>
+          </div>
         </div>
-        <div class="gap"></div>
-        <div class="address"></div>
-        <div id="contact-form">
-            <div id="message"></div>
-            <form method="post" action="php/contact.php" name="contactform" id="contactform">
-                <input name="Name" type="text" id="name"  class="inputForm2" placeholder="Name"  >
-                <input name="Email" type="text" id="email" placeholder="Email">
-                <textarea name="Nachricht"  id="comments" placeholder="Message"  ></textarea>
-                <input type="submit" class="send_message transition" id="submit" value="Senden" />
+
+        <div class="row portfolio-container" data-aos="fade-up" data-aos-delay="100">
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-app">
+            <div class="portfolio-wrap">
+              <img src="assets/img/sbbinclusive.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/sbbinclusive.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Das ist Oblendius Kaffeetasse"><i class="bx bx-plus"></i></a>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/HWR.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/HWR.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 3"><i class="bx bx-plus"></i></a>
+               
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-4 col-md-6 portfolio-item filter-web">
+            <div class="portfolio-wrap">
+              <img src="assets/img/myportfolio.png" class="img-fluid" alt="">
+              <div class="portfolio-links">
+                <a href="assets/img/myportfolio.png" data-gallery="portfolioGallery" class="portfolio-lightbox" title="Web 2"><i class="bx bx-plus"></i></a>
+                
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Portfolio Section -->
+
+    <!-- ======= Contact Section ======= -->
+    <section id="contact" class="contact">
+      <div class="container">
+
+        <div class="section-title">
+          <h2>Contact</h2>
+          <p>If you wish to contact me on any matter, please fill out the form down below.</p>
+        </div>
+
+        <div class="row" data-aos="fade-in">
+
+          <div class="col-lg-5 d-flex align-items-stretch">
+            <div class="info">
+              <div class="address">
+                <i class="bi bi-geo-alt"></i>
+                <h4>Location:</h4>
+                <p>AC. F. L. Lohnerstrasse 30, 3645 Gwatt</p>
+              </div>
+
+              <div class="email">
+                <i class="bi bi-envelope"></i>
+                <h4>Email:</h4>
+                <p>ron.karaqa@hotmail.com</p>
+              </div>
+
+              <div class="phone">
+                <i class="bi bi-phone"></i>
+                <h4>Call:</h4>
+                <p>+41 79 111 11 11</p>
+              </div>
+
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d43747.809062757886!2d7.60321326913708!3d46.740487929691334!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478fb28e48acb703%3A0x80ea7b636523579c!2sThun!5e0!3m2!1sen!2sch!4v1671368279745!5m2!1sen!2sch" frameborder="0" style="border:0; width: 100%; height: 290px;" allowfullscreen></iframe>
+            </div>
+
+          </div>
+
+          <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" required>
+                </div>
+                <div class="form-group col-md-6">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" required>
+                </div>
+              </div>
+              <div class="form-group">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" required>
+              </div>
+              <div class="form-group">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
             </form>
+          </div>
+
         </div>
 
+      </div>
+    </section><!-- End Contact Section -->
 
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container">
     </div>
+  </footer><!-- End  Footer -->
 
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
 
-</div>
-<!-- Footer
-================================================== -->
-<footer id="footer">
-    <div class="footer-top">
-        <div class="container text-center">
-            <div class="footer-logo">
-                <a href="https://codepen.io/jvjijith/pen/woMywq">Ron Karaqa</a>
-            </div>
-            <div class="social-icons">
-                <ul>
-                    <li><a class="envelope" href=""><i class="fa fa-codepen icon-sm"></i></a></li>
-                    <li><a class="twitter" href=""><i class="fa fa-twitter icon-sm"></i></a></li>
-                    <li><a class="dribbble" href=""><i class="fa fa-wordpress icon-sm"></i></a></li>
-                    <li><a class="facebook" href=""><i class="fa fa-facebook icon-sm"></i></a></li>
-                    <li><a class="linkedin" href=""><i class="fa fa-linkedin icon-sm"></i></a></li>
-                    <li><a class="tumblr" href=""><i class="fa fa-github icon-sm"></i></a></li>
-                </ul>
-            </div>
-        </div>
-    </div>
-    
-</footer>
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/typed.js/typed.min.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+
 </body>
+<script>
+  function move() {
+    var elem = document.getElementById("myBar");   
+    var width = 20;
+    var id = setInterval(frame, 10);
+    function frame() {
+      if (width >= 100) {
+        clearInterval(id);
+      } else {
+        width++; 
+        elem.style.width = width + '%'; 
+        elem.innerHTML = width * 1  + '%';
+      }
+    }
+  }
+  </script>
 </html>
