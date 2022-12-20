@@ -255,6 +255,7 @@
 
 })()
 
+ /** Progress bar function */
 function move() {
 
   /** Set starting width **/
@@ -358,6 +359,7 @@ function convertion(val)
   return (val - 273).toFixed(2)
 }
 
+ /** Weather API - api used: https://openweathermap.org/api **/
 
   fetch('https://api.openweathermap.org/data/2.5/weather?q='+'Thun'+'&appid='+apik)
           .then(res => res.json())
