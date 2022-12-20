@@ -1,9 +1,4 @@
-/**
-* Template Name: iPortfolio - v3.9.1
-* Template URL: https://bootstrapmade.com/iportfolio-bootstrap-portfolio-websites-template/
-* Author: BootstrapMade.com
-* License: https://bootstrapmade.com/license/
-*/
+
 (function() {
   "use strict";
 
@@ -259,3 +254,126 @@
   new PureCounter();
 
 })()
+
+function move() {
+
+  /** Set starting width **/
+  var width = 0;
+
+  /** Select all progress bars **/
+
+  var elem = document.getElementById("myBar");
+  var elemSecond = document.getElementById("myBar-second");
+  var elemThird = document.getElementById("myBar-third");
+  var elemFourth = document.getElementById("myBar-fourth");
+  var elemFifth = document.getElementById("myBar-fifth");
+  var elemSixth = document.getElementById("myBar-sixth");
+
+  /** Define percentual limit for fillup-animation **/
+
+  var lim1 = 70;
+  var lim2 = 60;
+  var lim3 = 60;
+  var lim4 = 60;
+  var lim5 = 30;
+  var lim6 = 65;
+
+  /** define interval **/
+
+  var id = setInterval(frame, 60);
+  var idSecondary = setInterval(frameSecondary, 60);
+  var idThird = setInterval(frameThird, 60);
+  var idFourth = setInterval(frameFourth, 60);
+  var idFifth = setInterval(frameFifth, 60);
+  var idSixth = setInterval(frameSixth, 60);
+
+  /** execute frame functions for progress bars **/
+
+  function frame() {
+    if (width >= lim1) {
+      clearInterval(id);
+    } else {
+      width++;
+      elem.style.width = width + '%';
+    }
+  }
+
+  function frameSecondary() {
+    if (width >= lim2) {
+      clearInterval(idSecondary);
+    } else {
+      width++;
+      elemSecond.style.width = width + '%';
+    }
+  }
+
+  function frameThird() {
+    if (width >= lim3) {
+      clearInterval(idThird);
+    } else {
+      width++;
+      elemThird.style.width = width + '%';
+    }
+  }
+
+  function frameFourth() {
+    if (width >= lim4) {
+      clearInterval(idFourth);
+    } else {
+      width++;
+      elemFourth.style.width = width + '%';
+    }
+  }
+
+  function frameFifth() {
+    if (width >= lim5) {
+      clearInterval(idFifth);
+    } else {
+      width++;
+      elemFifth.style.width = width + '%';
+    }
+  }
+
+  function frameSixth() {
+    if (width >= lim6) {
+      clearInterval(idSixth);
+    } else {
+      width++;
+      elemSixth.style.width = width + '%';
+    }
+  }
+
+}
+
+
+var inputval = document.querySelector('#cityinput')
+var btn = document.querySelector('#add');
+var city = document.querySelector('#cityoutput')
+var descrip = document.querySelector('#description')
+var temp = document.querySelector('#temp')
+var wind = document.querySelector('#wind')
+apik = "3045dd712ffe6e702e3245525ac7fa38"
+function convertion(val)
+{
+  return (val - 273).toFixed(2)
+}
+
+
+  fetch('https://api.openweathermap.org/data/2.5/weather?q='+'Thun'+'&appid='+apik)
+          .then(res => res.json())
+
+          .then(data =>
+          {
+            var nameval = data['name']
+            var descrip = data['weather']['0']['description']
+            var tempature = data['main']['temp']
+            var wndspd = data['wind']['speed']
+            city.innerHTML=`<span>Wetter Thun<span>`
+            temp.innerHTML = `Temperature: <span>${ convertion(tempature)} C</span>`
+            description.innerHTML = `Sky Conditions: <span>${descrip}<span>`
+            wind.innerHTML = `Wind Speed: <span>${wndspd} km/h<span>`
+
+          })
+
+          .catch(err => alert('You entered Wrong city name'))
+

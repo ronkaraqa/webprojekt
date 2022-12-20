@@ -213,6 +213,13 @@ h6 {
 /*--------------------------------------------------------------
 # Hero Section
 --------------------------------------------------------------*/
+
+.custom-blue{
+  background-color: #1c3d68;
+  border-radius: 25px;
+  height: 15px;
+}
+
 #hero {
   width: 100%;
   height: 100vh;
@@ -306,6 +313,54 @@ img.sbbimage {
 /*--------------------------------------------------------------
 # Sections General
 --------------------------------------------------------------*/
+
+
+
+.display
+{
+  padding: 0;
+  text-align: center;
+  color: #16a864;
+  margin: -4%;
+}
+.wrapper
+{
+  margin: 0 9rem;
+  background-color: white;
+  margin: auto;
+  border-radius: 20px;
+  padding-bottom: 10px;
+}
+
+.wrapper h2
+{
+  padding: 5px 0;
+  text-align: center;
+  background: #0548b5;
+  color: white;
+  font-family: sans-serif;
+  border-top-left-radius: 16px;
+  border-top-right-radius: 16px;
+}
+.wrapper p
+{
+  margin:20px 50px;
+  margin-right: 20px;
+  text-align: left;
+  color: #04214c;
+  font-size:23px;
+}
+.wrapper h2 span
+{
+  font-size: 26px;
+  color: #9beefb;
+}
+.wrapper p span
+{
+  color: #f4780d;
+  font-size: 25px;
+}
+
 section {
   padding: 60px 0;
   overflow: hidden;
@@ -380,7 +435,7 @@ svg {
 }
 
 .about .content ul li p {
-  margin-left: 17px;
+  margin-left: 3px;
 }
 
 .about .content ul strong {
@@ -596,6 +651,7 @@ svg {
   position: relative;
   overflow: hidden;
   z-index: 1;
+  max-height: 320px
 }
 
 .portfolio .portfolio-wrap::before {
@@ -1104,39 +1160,5 @@ svg {
 
   .breadcrumbs ol li {
     display: inline-block;
-  }
-}
-
-/*--------------------------------------------------------------
-# Footer
---------------------------------------------------------------*/
-#footer {
-  padding: 15px;
-  color: #f4f6fd;
-  font-size: 14px;
-  position: fixed;
-  left: 0;
-  bottom: 0;
-  width: 300px;
-  z-index: 9999;
-  background: #040b14;
-}
-
-#footer .copyright {
-  text-align: center;
-}
-
-#footer .credits {
-  padding-top: 5px;
-  text-align: center;
-  font-size: 13px;
-  color: #eaebf0;
-}
-
-@media (max-width: 1199px) {
-  #footer {
-    position: static;
-    width: auto;
-    padding-right: 20px 15px;
   }
 }
